@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .cartoon{
-  position: relative;
+  position: absolute;
 }
 
 .head{
