@@ -39,6 +39,10 @@ export default {
   border-radius: 50%;
   background-color: #03A6D7;
   border: 2px solid #000;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 100% 0;
 }
 
 .eye{
@@ -149,5 +153,13 @@ export default {
   left: -5%;
   background: inherit;
   border-radius: 5% / 50%;
+}
+
+@keyframes move {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(-15deg);}
+  50% {transform: rotate(0deg);}
+  75% {transform: rotate(15deg);}
+  100% {transform: rotate(0deg);}
 }
 </style>
